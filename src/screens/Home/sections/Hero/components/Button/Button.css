@@ -1,7 +1,11 @@
 button.hero {
     outline: none;
     border: none;
+    /* font-size: min(87.5%, 0.875rem); */
+    
+    /* font-size: calc(14vw / 3.9); */
     font-size: 0.875rem;
+    /* font-size: min(0.875rem, calc(14vw / 3.9)); */
     font-weight: 700;
     padding: 0.75em 1.625em;
     border-radius: 0.5rem;

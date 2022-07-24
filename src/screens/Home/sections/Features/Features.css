@@ -1,3 +1,11 @@
 .features {
     padding: 3rem 2.25rem;
 }
+
+.feature__feature-icon {
+    color: var(--primary-color);
+}
+
+.feature-text h2 {
+    line-height: 110%;
+}

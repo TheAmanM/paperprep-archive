@@ -48,9 +48,10 @@ const Features = () => {
             <Teaser question="Why use Paper Prep?" />
             <FeatureTitle title={
                 <div className='feature-text'>
-                    <h2>A <span className="blue-text">painless</span></h2>
+                    {/* <h2>A <span className="blue-text">painless</span></h2>
                     <h2>experience while</h2>
-                    <h2>you study.</h2>
+                    <h2>you study.</h2> */}
+                    <h2>A <span className="blue-text">painless</span> experience while you study.</h2>
                 </div>
             }
                 bottomMargin='3rem'

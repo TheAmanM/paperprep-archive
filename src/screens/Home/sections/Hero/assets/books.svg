@@ -1,9 +1,12 @@
-<svg width="318" height="202" viewBox="0 0 318 202" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="318" height="204" viewBox="0 0 318 204" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="Variant=Mobile">
-<rect id="img" width="318" height="202" fill="url(#pattern0)"/>
+<rect id="img" y="2" width="318" height="202" fill="url(#pattern0)"/>
 <g id="overlay" style="mix-blend-mode:hue">
-<rect x="4" width="313" height="200" fill="#007FFF"/>
+<rect x="4" y="2" width="313" height="200" fill="#007FFF"/>
 </g>
+<rect id="Rectangle 313" y="1" width="115" height="8" fill="white"/>
+<path id="Vector 690" d="M288 8C288 3.2 283.333 2 281 2H317V8H288Z" fill="white"/>
+<rect id="Rectangle 314" width="318" height="2" fill="white"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

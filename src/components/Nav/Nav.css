@@ -28,17 +28,27 @@
 }
 
 .nav__logo__icon {
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
 
-    height: 22px;
+    height: 28px;
     aspect-ratio: 1;
 }
 
-.nav__logo > h2 {
-    font-size: 1rem;
+.nav__logo__name {
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
+.nav__icon {
+    height: 24px;
+    aspect-ratio: 1;
+}
+
+#top,
+#middle,
+#bottom {
+    transition: all 300ms var(--cb-curve);
+}
 
 .nav-menu {
     width: 100%;

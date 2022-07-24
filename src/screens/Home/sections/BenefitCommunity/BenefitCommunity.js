@@ -8,8 +8,7 @@ const BenefitCommunity = () => {
         <div className="benefit-community section-accent">
             <FeatureTitle title={
                 <div className='feature-text'>
-                    <h2>Available</h2>
-                    <h2><span className="blue-text">Community</span> Support.</h2>
+                    <h2>Available <span className="blue-text">Community</span> Support.</h2>
                 </div>
             } />
             <div className="benefit-community__description">

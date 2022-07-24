@@ -11,3 +11,7 @@ img.benefit-clean__img {
     border-radius: 0.5rem;
     margin-top: 1.5rem;
 }
+
+.benefit-clean__heading {
+    line-height: 110%;
+}

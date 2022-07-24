@@ -8,11 +8,9 @@ const BenefitClean = () => {
         <div className="section-dark benefit-clean">
             <FeatureTitle
                 title={
-                    <>
-                        <h2>
-                            A <span className="blue-text"> clean</span> interface.
-                        </h2>
-                    </>
+                    <h2 className='benefit-clean__heading'>
+                        A <span className="blue-text"> clean</span> interface.
+                    </h2>
                 }
             />
             <div className="benefit-clean__body-text">

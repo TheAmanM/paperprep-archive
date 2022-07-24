@@ -7,9 +7,12 @@
     margin: 2rem 0;
 }
 
-.hero__text h1 {
+.hero__text {
+    /* font-size: min(calc(12.5vw), 3rem); */
+    /* font-size: min(0.2vw, 3rem); */
     font-size: 3rem;
     margin-bottom: -1rem;
+    line-height: 110%;
 }
 
 .hero__description {
@@ -24,9 +27,20 @@
 }
 
 .hero__button-row__split {
-    margin-inline: 0.75rem;
+    margin: 0.25rem 0.75rem;
 }
 
 .hero__hero-image {
     margin-top: 3rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 390px) {
+    .hero__button-row {
+        flex-direction: column;
+    }
+
+    .hero__button-row button {
+        width: 100%;
+    }
 }
