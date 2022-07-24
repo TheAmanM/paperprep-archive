@@ -1,0 +1,13 @@
+.benefit-community {
+    padding: 3rem 2.25rem;
+}
+
+.benefit-community__description {
+    margin: 1.5rem 0;
+}
+
+img.benefit-community__img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}

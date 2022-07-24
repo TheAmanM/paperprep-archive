@@ -1,0 +1,20 @@
+button.hero {
+    outline: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.75em 1.625em;
+    border-radius: 0.5rem;
+    letter-spacing: 0.25px;
+}
+
+button.hero.filled {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+button.hero.outlined {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}

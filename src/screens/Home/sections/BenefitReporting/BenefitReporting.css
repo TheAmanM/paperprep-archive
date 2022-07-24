@@ -1,0 +1,13 @@
+.benefit-reporting {
+    padding: 3rem 2.25rem;
+}
+
+.benefit-reporting__description {
+    margin: 1.5rem 0;
+}
+
+img.benefit-reporting__img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,21 @@
+.flow-break {
+    background: fixed url('./assets/background.png');
+    background-position: center;
+
+    padding: 6rem 2.25rem;
+
+    text-align: center;
+}
+
+.flow-break__break-intro {
+    color: var(--white-body-text);
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.flow-break__main-text h1{
+    margin-bottom: -0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}

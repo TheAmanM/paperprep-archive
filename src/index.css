@@ -1,13 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #007fff;
+  --primary-accent: #F3F6F9;
+  --primary-effect: #0059B3;
+  
+  --secondary-color: #091029;
+
+  --black-body-text: rgba(0, 0, 0, 0.5);
+  --white-body-text: rgba(255, 255, 255, 0.7);
+
+  --divider-color: #DADBDF;
+
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --cb-curve: cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+* {
+  font-family: 'Nunito', 'Segoe-UI', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+
+button.filled {
+  background-color: var(--primary-color);
+  transition: all 300ms var(--cb-curve);
+}
+
+button.filled:active {
+  background-color: var(--primary-effect);
+}
+
+button.button-loading {
+  background-color: darkgrey;
+}
+
+.blue-text {
+  color: var(--primary-color);
+}
+
+.section-light {
+  background-color: var(--white);
+}
+
+.section-light h1, .section-light h2 {
+  color: var(--secondary-color);
+}
+
+.section-light .blue-text {
+  color: var(--primary-color);
+}
+
+.section-light p {
+  color: var(--black-body-text);
+  text-align: center;
+}
+
+
+.section-accent {
+  background-color: var(--primary-accent);
+}
+
+.section-accent p {
+  color: var(--black-body-text);
+  text-align: center;
+}
+
+.section-accent h2 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+
+.section-dark {
+  background-color: var(--secondary-color);
+}
+
+.section-dark h1, .section-dark h2 {
+  color: var(--white);
+}
+
+.section-dark .blue-text {
+  color: var(--primary-color);
+}
+
+.section-dark p {
+  color: var(--white-body-text);
+  text-align: center;
 }

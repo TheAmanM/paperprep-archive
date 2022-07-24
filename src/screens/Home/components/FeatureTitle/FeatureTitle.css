@@ -1,0 +1,10 @@
+h2 {
+    margin: 0px auto;
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+.feature-text h2 {
+    margin-bottom: -0.5rem;
+}
