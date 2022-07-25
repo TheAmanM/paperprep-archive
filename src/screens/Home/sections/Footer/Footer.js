@@ -15,13 +15,13 @@ const Footer = (props) => {
                 Copyright ©2022 Paper Prep.&nbsp;
             </div>
             <div className="no-wrap">
-                Designed and Developed by <span className="blue-text-wrapper">
-                    <a href="#">
-                        <span className="blue-text">Aman Meherally
-                        </span>
-                    </a>
-                </span>.
+                Designed and Developed by&nbsp;
             </div>
+            <span className="blue-text-wrapper">
+                <a href="/">
+                    <span className="blue-text"> Aman Meherally</span>
+                </a>
+            </span>.
         </div>
     )
 }

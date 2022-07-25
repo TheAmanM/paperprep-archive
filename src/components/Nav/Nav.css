@@ -1,6 +1,7 @@
 .navbar {
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--divider-color);
+    
     background-color: var(--white);
     color: var(--primary-color);
     
@@ -8,13 +9,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    
     width: 100%;
 }
 
 .navbar-wrapper {
     width: 100vw;
     position: fixed;
+
+    z-index: 1;
 }
 
 .navbar-wrapper .hidden {
@@ -30,12 +33,12 @@
 .nav__logo__icon {
     margin-right: 0.75rem;
 
-    height: 28px;
+    height: 24px;
     aspect-ratio: 1;
 }
 
 .nav__logo__name {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 

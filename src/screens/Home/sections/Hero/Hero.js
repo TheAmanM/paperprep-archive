@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Hero.css'
 import booksImg from './assets/books.svg'
 import Button from './components/Button/Button'
+import HeroTextEffect from './components/HeroTextEffect/HeroTextEffect'
+// import TextTransition from 'react-text-transition';
 
 const Hero = (props) => {
+    /* const [animationIndex, setAnimationIndex] = useState(0);
+
+    const words = [
+        'organized',
+        'fun',
+        'impactful',
+        'efficient',
+    ]; */
+
     return (
         <>
             <div className="hero section-light">
@@ -18,11 +29,8 @@ const Hero = (props) => {
                     <div>
                         can be
                     </div>
-                    <div>
-                        <span className="blue-text">organized</span>.
-                    </div>
+                    <HeroTextEffect />
                 </h1>
-                {/* </div> */}
                 <div className="hero__description">
                     <p>
                         Paper Prep is a web-based software that enables students to practice for their O-Level, A-Level and IGCSE exams through past papers using a well designed functioning system, all for free.

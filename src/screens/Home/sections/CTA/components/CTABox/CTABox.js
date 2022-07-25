@@ -79,7 +79,7 @@ const CTABox = () => {
                 onChange={(e) => handleChange(e)}
             />
             <button
-                className={loading ? 'cta-box__button filled button-loading' : 'cta-box__button filled'}
+                className={loading ? 'cta-box__button bigfilled button-loading' : 'cta-box__button big filled'}
                 onClick={() => handleSubmit()}>
                 {/* {loading ? "• • •" : "Notify Me"} */}
                 Notify Me!

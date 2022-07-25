@@ -29,13 +29,13 @@ const Nav = (props) => {
                     menuOpen ?
                         <BiX
                             className='nav__menu'
-                            size={'28px'}
+                            size={'24px'}
                             onClick={handleMenuClick}
                             style={{ cursor: 'pointer' }}
                         /> :
                         <BiMenu
                             className='nav__menu'
-                            size={'28px'}
+                            size={'24px'}
                             onClick={handleMenuClick}
                             style={{ cursor: 'pointer' }}
                             />

@@ -1,0 +1,17 @@
+h1 {
+    font-size: 3rem;
+}
+
+.words-wrapper {
+    color: var(--primary-color);
+    text-align: center;
+    z-index: 0;
+
+    width: 100%;
+}
+
+.word {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+}

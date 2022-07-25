@@ -19,7 +19,8 @@
 }
 
 * {
-  font-family: 'Nunito', 'Segoe-UI', sans-serif;
+  /* font-family: 'Nunito', 'Segoe-UI', sans-serif; */
+  font-family: 'Nunito', 'Trebuchet MS', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 

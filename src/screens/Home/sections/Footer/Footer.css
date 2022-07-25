@@ -1,7 +1,7 @@
 .footer {
     padding: 1rem 2.25rem;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 
     color: var(--white);
 }
@@ -16,7 +16,7 @@
 }
 
 .blue-text-wrapper {
-    display: inline;
+    display: inline-block;
 }
 
 .footer span.blue-text::after {
