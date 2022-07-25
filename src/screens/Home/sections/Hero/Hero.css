@@ -38,8 +38,4 @@
     .hero__button-row {
         flex-direction: column;
     }
-
-    .hero__button-row button {
-        width: 100%;
-    }
 }
