@@ -17,7 +17,7 @@ const BenefitCommunity = () => {
                 </p>
             </div>
             <div className="benefit-community__img">
-                <img src={imgLight} alt="Collections View" className='benefit-community__img'/>
+                <img src={imgLight} alt="Collections View" className='benefit-community__img svg'/>
             </div>
         </div>
     )

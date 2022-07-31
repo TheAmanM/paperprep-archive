@@ -5,3 +5,7 @@
 .cta__title {
     line-height: 210%;
 }
+
+.no-wrap {
+    white-space: nowrap;
+}

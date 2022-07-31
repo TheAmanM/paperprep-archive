@@ -16,9 +16,9 @@ const BenefitReporting = () => {
                 Statistics and data to help you accurately determine what you are great at, and what you need to focus on. Studying should be actively efficient. 
                 </p>
             </div>
-            {/* <div className="benefit-reporting__img"> */}
-                <img src={imgLight} alt="Reporting View" className='benefit-reporting__img'/>
-            {/* </div> */}
+            <div className="benefit-reporting__img">
+                <img src={imgLight} alt="Reporting View" className='benefit-reporting__img svg'/>
+            </div>
         </div>
     )
 }

@@ -61,15 +61,13 @@ const HeroTextEffect = () => {
             {words[animationIndex % words.length]}
         </AnimatedText> */
 
-        <div>
-            <TextAnimation.Slide text={words} target={words[0]} animation={{
-                duration: 750,
-                delay: 3000,
-                timingFunction: 'cubic-bezier(0.5, -0.6, 0.5, 1.4)',
-            }}>
-                organized
-            </TextAnimation.Slide>
-        </div>
+        <TextAnimation.Slide text={words} target={words[0]} animation={{
+            duration: 750,
+            delay: 3000,
+            timingFunction: 'cubic-bezier(0.5, -0.6, 0.5, 1.4)',
+        }}>
+            organized
+        </TextAnimation.Slide>
     );
 }
 

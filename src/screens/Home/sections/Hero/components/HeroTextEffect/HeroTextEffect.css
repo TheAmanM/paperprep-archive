@@ -15,3 +15,22 @@ h1 {
     width: 100%;
     margin: 0px auto;
 }
+
+/* @media screen and (min-width: 960px) {
+    .words-wrapper,
+    .word,
+    h1 {
+        text-align: left;
+    }
+} */
+
+@media screen and (min-width: 960px) {
+    .words-wrapper,
+    .word {
+        text-align: left;
+    }
+
+    .text-animation-slide {
+        display: block;
+    }
+}

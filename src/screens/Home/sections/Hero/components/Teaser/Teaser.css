@@ -5,3 +5,9 @@ h3.teaser-text {
 
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 960px) {
+    h3.teaser-text {
+        text-align: left;
+    }
+}

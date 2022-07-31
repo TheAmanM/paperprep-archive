@@ -11,7 +11,7 @@ const CTA = () => {
             <FeatureTitle title={
                 <>
                     <div className='cta__title'>
-                        <h2>Paper Prep is coming <span className="blue-text">very soon</span>...</h2>
+                        <h2>Paper Prep is coming <span className="blue-text no-wrap">very soon</span>...</h2>
                     </div>
                 </>
             }

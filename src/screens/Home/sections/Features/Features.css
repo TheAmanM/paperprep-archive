@@ -9,3 +9,45 @@
 .feature-text h2 {
     line-height: 110%;
 }
+
+.feature-text__boxes {
+    display: none;
+}
+
+.feature-text__text-wrapper {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 640px) {
+    .feature__feature-boxes {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .feature-text h2 {
+        text-align: left;
+    }
+
+    .features {
+        padding: 5rem 4.5rem;
+    }
+
+    .feature-text__text-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .feature-text__boxes {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1152px) {
+    .feature__feature-boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

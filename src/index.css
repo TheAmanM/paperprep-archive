@@ -15,6 +15,11 @@
   --black: #000000;
   --white: #FFFFFF;
 
+  --color-scrollbar-track: white;
+  /* --color-scrollbar-track: ; */
+  --color-scrollbar-thumb: hsl(0, 0%, 80%);
+  --color-scrollbar-thumb-active: hsl(0, 0%, 72%);
+
   --cb-curve: cubic-bezier(0.8, 0, 0.2, 1);
 }
 
@@ -49,11 +54,39 @@ a {
   text-decoration: none;
 }
 
+/* .svg {
+
+} */
+
+.no-select {
+  pointer-events: none;
+  /* user-select: none; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-scrollbar-thumb-active);
+  border-radius: 100vw;
+}
+
 /* Utilities */
 
 button {
   outline: none;
   border: none;
+  border: 2px solid var(--primary-color);
   font-size: 0.875rem;
   font-weight: 700;
 
@@ -72,7 +105,6 @@ button.filled:active {
 
 button.outlined {
   background-color: transparent;
-  border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 
