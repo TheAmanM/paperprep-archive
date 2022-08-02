@@ -138,6 +138,10 @@ button.big {
   color: var(--primary-color);
 }
 
+.section-light h2 {
+  text-align: center;
+}
+
 .section-light p {
   color: var(--black-body-text);
   text-align: center;
@@ -170,6 +174,10 @@ button.big {
 
 .section-dark .blue-text {
   color: var(--primary-color);
+}
+
+.section-dark h2 {
+  text-align: center;
 }
 
 .section-dark p {
