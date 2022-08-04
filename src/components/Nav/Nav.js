@@ -61,16 +61,18 @@ const Nav = (props) => {
             </div>
         </div> */
     <div className="navbar">
-      <div className="navbar__logo">
-        <img src={logo} alt="Logo" className="navbar__logo__icon" />
-        <h2 className="navbar__logo__title">Paper Prep</h2>
-      </div>
+      <a href="/">
+        <div className="navbar__logo">
+          <img src={logo} alt="Logo" className="navbar__logo__icon" />
+          <h2 className="navbar__logo__title">Paper Prep</h2>
+        </div>
+      </a>
       <BiMenu
         className="navbar__menu-btn"
         size={"30px"}
         onClick={handleMenuClick}
       />
-      <div className={`navbar__navigation ${!menuOpen && "hide"}`}>
+      <div className={`navbar__navigation ${!menuOpen ? "hide" : ""}`}>
         <BiX
           className={`navbar__close-btn`}
           size={"34px"}

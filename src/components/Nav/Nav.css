@@ -76,134 +76,137 @@ button.outlined.button {
 */
 
 .navbar {
-    padding: 1rem 5rem;
-    border-bottom: 1px solid var(--divider-color);
-    background-color: var(--white);
-    position: fixed;
-    width: 100vw;
-    z-index: 2;
+  padding: 1rem 5rem;
+  border-bottom: 1px solid var(--divider-color);
+  background-color: var(--white);
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar__logo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .navbar__logo__icon {
-    height: 2rem;
-    margin-right: 0.75rem;
+  height: 2rem;
+  margin-right: 0.75rem;
 }
 
 h2.navbar__logo__title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-inline: 0;
-    color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-inline: 0;
+  color: var(--primary-color);
 }
 
 .navbar__close-btn,
 .navbar__menu-btn {
-    display: none;
+  display: none;
 }
 
 .navbar__navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 ul.navbar__navigation__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    color: var(--secondary-color);
-    font-weight: 500;
+  color: var(--secondary-color);
+  font-weight: 500;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 li.navbar__navigation__item,
 .navbar__navigation button.button {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .navbar__navigation button.button {
-    padding: 0.25em 1em;
-    border-radius: 0.375em;
+  padding: 0.25em 1em;
+  border-radius: 0.375em;
 }
 
 .navbar svg {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 720px) {
-    .navbar {
-        padding: 0.75rem 2.25rem;
-    }
+  .navbar {
+    padding: 0.75rem 2.25rem;
+  }
 
-    /* Popout navigation styling */
+  /* Popout navigation styling */
 
-    .navbar__close-btn {
-        display: block;
-        margin-block: 0.25rem 1rem;
-        margin-inline-start: -0.5rem;
-        cursor: pointer;
-    }
+  .navbar__close-btn {
+    display: block;
+    margin-block: 0.25rem 1rem;
+    margin-inline-start: -0.5rem;
+    cursor: pointer;
+  }
 
-    .navbar__menu-btn {
-        cursor: pointer;
-        display: block;
-    }
+  .navbar__menu-btn {
+    cursor: pointer;
+    display: block;
+  }
 
-    .navbar__navigation {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: var(--white);
-        border-left: 1px solid var(--divider-color);
-        padding: 0.5rem 1.5rem;
-        
-        position: fixed;
-        width: 70%;
-        inset: 0 0 0 30%;
+  .navbar__navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-left: 1px solid var(--divider-color);
+    padding: 0.5rem 1.5rem;
 
-        transition: left 400ms var(--cb-curve);
-    }
+    position: fixed;
+    width: calc(100vw - (90vw - 216px));
+    inset: 0;
+    /* inset-inline-end: 0; */
+    inset-inline-start: calc(90vw - 216px);
+    /* inset: 0 0 0 432px; */
 
-    .navbar__navigation > * + *,
-    ul.navbar__navigation__list > a + a{
-        margin-top: 1rem;
-    }
+    transition: left 400ms var(--cb-curve);
+  }
 
-    ul.navbar__navigation__list {
-        flex-direction: column;
-        margin-bottom: 2rem;
-    }
+  .navbar__navigation > * + *,
+  ul.navbar__navigation__list > a + a {
+    margin-top: 1rem;
+  }
 
-    li.navbar__navigation__item {
-        margin-left: 0;
-    }
+  ul.navbar__navigation__list {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
 
-    .navbar button.button {
-        margin-left: 0;
-    }
+  li.navbar__navigation__item {
+    margin-left: 0;
+  }
 
-    .navbar button {
-        width: 100%;
-        max-width: 12.5rem;
-    }
+  .navbar button.button {
+    margin-left: 0;
+  }
 
-    .hide {
-        left: 100vw;
-        width: 70vw;
-    }
+  .navbar button {
+    width: 100%;
+    /* max-width: 12.5rem; */
+  }
+
+  .hide {
+    left: 100vw;
+    /* width: 40vw; */
+  }
 }
