@@ -4,7 +4,7 @@ import Teaser from "../Hero/components/Teaser/Teaser";
 import FeatureTitle from "../../components/FeatureTitle/FeatureTitle";
 import FeatureBox from "./components/FeatureBox/FeatureBox";
 
-import boxes from "./../../assets/lightBoxes.svg";
+import boxes from "./../../../../assets/lightBoxes.svg";
 
 // import { MdDesignServices } from 'react-icons/md'
 // import { FaRegMehRollingEyes } from 'react-icons/fa'
@@ -14,7 +14,7 @@ import boxes from "./../../assets/lightBoxes.svg";
 import { BiBook, BiMehAlt, BiPencil, BiUserVoice } from "react-icons/bi";
 
 const Features = () => {
-  const iconSize = "1.375rem";
+  const iconSize = "22px";
   const data = [
     {
       id: 1,

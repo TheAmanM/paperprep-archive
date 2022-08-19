@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --primary-color: #007fff;
-  --primary-accent: #F3F6F9;
-  --primary-effect: #0059B3;
+  --primary-accent: #f3f6f9;
+  --primary-effect: #0059b3;
 
   --secondary-color: #091029;
 
   --black-body-text: rgba(0, 0, 0, 0.5);
   --white-body-text: rgba(255, 255, 255, 0.7);
 
-  --divider-color: #DADBDF;
+  --divider-color: #dadbdf;
 
   --black: #000000;
-  --white: #FFFFFF;
+  --white: #ffffff;
 
   --color-scrollbar-track: white;
   /* --color-scrollbar-track: ; */
@@ -25,7 +25,7 @@
 
 * {
   /* font-family: 'Nunito', 'Segoe-UI', sans-serif; */
-  font-family: 'Nunito', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+  font-family: "Nunito", "Trebuchet MS", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -110,6 +110,8 @@ button.outlined {
 
 button.button-loading {
   background-color: darkgrey;
+  border-color: darkgrey;
+  cursor: default;
 }
 
 button.full-width {
@@ -147,7 +149,6 @@ button.big {
   text-align: center;
 }
 
-
 .section-accent {
   background-color: var(--primary-accent);
 }
@@ -161,7 +162,6 @@ button.big {
   color: var(--secondary-color);
   text-align: center;
 }
-
 
 .section-dark {
   background-color: var(--secondary-color);

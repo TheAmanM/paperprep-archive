@@ -1,0 +1,11 @@
+h1.logo {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+h1.logo::selection {
+  color: var(--primary-color);
+  background-color: var(--white);
+}

@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Nav.css";
 import { BiMenu, BiX } from "react-icons/bi";
 import logo from "./assets/logo.svg";
+import { Link } from "react-router-dom";
 // import menu from './assets/menu.svg'
 // import close from './assets/close.svg'
 // import { FaTimes } from 'react-icons/fa'
@@ -14,10 +15,10 @@ const Nav = (props) => {
     setMenuOpen(!menuOpen);
   }
 
-  function handleLogin() {
-    setMenuOpen(false);
-    props.scrollToBottom();
-  }
+  // function handleLogin() {
+  //   setMenuOpen(false);
+  //   props.scrollToBottom();
+  // }
 
   function handleSignUp() {
     setMenuOpen(false);
@@ -61,12 +62,13 @@ const Nav = (props) => {
             </div>
         </div> */
     <div className="navbar">
-      <a href="/">
+      {/* <a href="/"> */}
+      <Link to={"/"}>
         <div className="navbar__logo">
           <img src={logo} alt="Logo" className="navbar__logo__icon" />
           <h2 className="navbar__logo__title">Paper Prep</h2>
         </div>
-      </a>
+      </Link>
       <BiMenu
         className="navbar__menu-btn"
         size={"30px"}
@@ -79,19 +81,21 @@ const Nav = (props) => {
           onClick={handleMenuClick}
         />
         <ul className="navbar__navigation__list">
-          <a href="/">
+          <Link to={"/"}>
             <li className="navbar__navigation__item">Home</li>
-          </a>
-          <a href="/">
+          </Link>
+          <Link to="/about">
             <li className="navbar__navigation__item">About</li>
-          </a>
+          </Link>
         </ul>
-        <button className="button outlined" onClick={handleLogin}>
-          Login
-        </button>
-        <button className="button filled" onClick={handleSignUp}>
-          Sign Up
-        </button>
+        <Link to={"/auth"}>
+          <button className="button outlined">Login</button>
+        </Link>
+        <Link to={"/auth"}>
+          <button className="button filled" onClick={handleSignUp}>
+            Sign Up
+          </button>
+        </Link>
       </div>
     </div>
   );

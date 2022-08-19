@@ -1,21 +1,36 @@
 .flow-break {
-    background: fixed url('./assets/background.png');
-    background-position: center;
+  background: fixed url("./assets/background.png");
+  background-position: center;
 
-    padding: 6rem 2.25rem;
+  padding: 6rem 2.25rem;
 
-    text-align: center;
+  text-align: center;
 }
 
 .flow-break__break-intro {
-    color: var(--white-body-text);
-    font-weight: 400;
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+  color: var(--white-body-text);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
-.flow-break__main-text h1{
-    margin-bottom: -0.5rem;
-    font-size: 2.5rem;
-    font-weight: 700;
+.flow-break__main-text h1 {
+  margin-bottom: -0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 720px) {
+  .flow-break {
+    padding-block: 10rem;
+    background-size: 4%;
+  }
+
+  .flow-break__break-intro {
+    font-size: 1.5rem;
+  }
+
+  .flow-break__main-text h1 {
+    font-size: clamp(2.5rem, calc((800vw / 240) + 1.5rem), 3.5rem);
+  }
 }

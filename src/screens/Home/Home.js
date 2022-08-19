@@ -13,6 +13,7 @@ import Footer from "./sections/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Benefits from "./sections/Benefits/Benefits";
+import LoadWrapper from "../../components/LoadWrapper/LoadWrapper";
 
 const Home = () => {
   const bottomRef = useRef(null);
@@ -29,7 +30,7 @@ const Home = () => {
       <Benefits />
       {/* <BenefitClean />
       <BenefitCommunity />
-      <BenefitReporting /> */}
+    <BenefitReporting /> */}
       <FlowBreak />
       <CTA />
       <Footer reference={bottomRef} />

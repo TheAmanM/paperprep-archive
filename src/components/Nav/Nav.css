@@ -200,9 +200,9 @@ li.navbar__navigation__item,
     margin-left: 0;
   }
 
-  .navbar button {
+  .navbar a,
+  .navbar a button {
     width: 100%;
-    /* max-width: 12.5rem; */
   }
 
   .hide {

@@ -1,0 +1,149 @@
+.login__grid {
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+  background-color: var(--primary-color);
+  background-image: url("./../../assets/darkBox.svg");
+  background-size: 3.5rem;
+  background-position: center;
+}
+
+.login__grid.page-loading::after {
+  content: "";
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  z-index: 9;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.login__border {
+  width: min(28rem, 87.5vw);
+  /* padding: 1.25rem 1.25rem; */
+  padding: 2.5rem 2rem;
+  margin-block: 2rem;
+  background-color: var(--white);
+
+  border: 1px solid var(--divider-color);
+  border-radius: 0.5rem;
+
+  text-align: center;
+}
+
+.login__header {
+  display: flex;
+  align-items: center;
+}
+
+h2.login__border__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.login__main {
+  margin: 2rem 0 0;
+}
+
+/* .login__social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.login__social-icons > div {
+  border: 1px solid var(--divider-color);
+  display: flex;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__social-icons > div > svg {
+  margin-right: 0.5rem;
+} */
+
+.login__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.login__social-icons > div {
+  border: 1px solid var(--divider-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.login__or {
+  margin: 1.5rem 0 3.5rem;
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.login__or-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--divider-color);
+  position: absolute;
+  top: 50%;
+}
+
+.login__or-text {
+  background: white;
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 0.75rem;
+}
+
+.login__grid input {
+  outline: none;
+  border-radius: 0.5em;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+
+  border: 1px solid var(--divider-color);
+}
+
+.login__grid .input {
+  width: 100%;
+}
+
+.login__form > * + * {
+  margin-top: 0.75rem;
+}
+
+.login__form__forgot-pass {
+  font-size: 0.875rem;
+  text-align: right;
+
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.login__form > button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+.login__form > p {
+  margin-bottom: 1rem;
+}
