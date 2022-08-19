@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import "./App.css";
-import LoadWrapper from "./components/LoadWrapper/LoadWrapper";
+// import LoadWrapper from "./components/LoadWrapper/LoadWrapper";
 import ProgressIndicator from "./components/ProgressIndicator/ProgressIndicator";
 import Login from "./screens/Authenticate/Login";
 import Dashboard from "./screens/Dashboard/Dashboard";
@@ -38,6 +38,7 @@ function App() {
         }}
       /> */}
       <Router>
+        <ProgressIndicator />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<div>Hi</div>}></Route>

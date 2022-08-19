@@ -13,7 +13,8 @@ import Footer from "./sections/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Benefits from "./sections/Benefits/Benefits";
-import LoadWrapper from "../../components/LoadWrapper/LoadWrapper";
+// import LoadWrapper from "../../components/LoadWrapper/LoadWrapper";
+// import ProgressIndicator from "../../components/ProgressIndicator/ProgressIndicator";
 
 const Home = () => {
   const bottomRef = useRef(null);
