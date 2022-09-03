@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Profile initial="A" />
-      <IconContext.Provider value={{ size: "1.2rem" }}>
+      <IconContext.Provider value={{ size: "1.25rem" }}>
         <SidebarNavigation />
       </IconContext.Provider>
     </div>
