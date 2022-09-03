@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+// import { initializeApp } from "firebase/app";
 import {
   // signInWithEmailLink,
   GoogleAuthProvider,
@@ -14,6 +14,7 @@ import {
 } from "firebase/auth";
 import { collection, getFirestore } from "firebase/firestore";
 import { useContext, createContext, useState, useEffect } from "react";
+import data from "./initializeApp";
 // import { getAnalytics } from "firebase/analytics";
 // import { getFirestore, collection } from "@firebase/firestore";
 // import { getPerformance } from "@firebase/performance";
@@ -22,15 +23,7 @@ import { useContext, createContext, useState, useEffect } from "react";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const app = initializeApp({
-  apiKey: "REDACTED",
-  authDomain: "paper-prep.firebaseapp.com",
-  projectId: "paper-prep",
-  storageBucket: "paper-prep.appspot.com",
-  messagingSenderId: "954760299274",
-  appId: "1:954760299274:web:1750c711565ea1693930f3",
-  measurementId: "G-H5T2S2QKR4",
-});
+const app = data;
 
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);

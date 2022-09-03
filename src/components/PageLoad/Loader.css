@@ -1,0 +1,29 @@
+:root {
+  --loading-curve: cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+#loader {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+#top-main {
+  animation: loader 1.5s var(--loading-curve) infinite;
+  transform-origin: center;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleX(1);
+    /* transform: rotate(0deg); */
+  }
+
+  50% {
+    transform: scaleX(-1);
+    /* transform: rotate(360deg); */
+  }
+
+  100% {
+    transform: scaleX(-1);
+  }
+}

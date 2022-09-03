@@ -1,0 +1,11 @@
+.sidebar-navigation {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: flex-start;
+}
+
+.sidebar-navigation-last-tile {
+  margin-top: auto;
+}

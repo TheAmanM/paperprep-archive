@@ -1,0 +1,35 @@
+.navigation-tile {
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  transition: all 5000ms ease-in-out;
+}
+
+.navigation-tile.closed {
+  padding: 0.75rem;
+  /* aspect-ratio: 1; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.navigation-tile svg {
+  margin-right: 0.8rem;
+  z-index: 10;
+}
+
+.navigation-tile.closed svg {
+  margin: 0;
+}
+
+.navigation-tile.selected {
+  background-color: var(--primary-accent);
+  color: var(--primary-color);
+}

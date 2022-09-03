@@ -1,0 +1,34 @@
+<svg width="360" height="196" viewBox="0 0 360 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Loader">
+<g id="main">
+<rect id="base" x="4" y="4" width="352" height="188" rx="24" fill="#B9DCFF" stroke="#007FFF" stroke-width="8"/>
+<rect id="border" x="176" width="8" height="196" fill="#007FFF"/>
+<g id="lines">
+<g id="right-lines">
+<rect id="Rectangle 317" x="209" y="48" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 318" x="209" y="92" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 319" x="209" y="136" width="120" height="12" rx="4" fill="#007FFF"/>
+</g>
+<g id="left-lines">
+<rect id="Rectangle 320" x="31" y="48" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 321" x="31" y="92" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 322" x="31" y="136" width="120" height="12" rx="4" fill="#007FFF"/>
+</g>
+</g>
+</g>
+<g id="top-main">
+<g id="top-base">
+<mask id="path-9-inside-1_0_1" fill="white">
+<path d="M180 0H332C347.464 0 360 12.536 360 28V168C360 183.464 347.464 196 332 196H180V0Z"/>
+</mask>
+<path d="M180 0H332C347.464 0 360 12.536 360 28V168C360 183.464 347.464 196 332 196H180V0Z" fill="#B9DCFF"/>
+<path d="M176 -8H332C351.882 -8 368 8.11775 368 28H352C352 16.9543 343.046 8 332 8H184L176 -8ZM368 168C368 187.882 351.882 204 332 204H176L184 188H332C343.046 188 352 179.046 352 168H368ZM176 204V-8L184 8V188L176 204ZM332 -8C351.882 -8 368 8.11775 368 28V168C368 187.882 351.882 204 332 204V188C343.046 188 352 179.046 352 168V28C352 16.9543 343.046 8 332 8V-8Z" fill="#007FFF" mask="url(#path-9-inside-1_0_1)"/>
+</g>
+<g id="top-right-lines">
+<rect id="Rectangle 317_2" x="209" y="48" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 318_2" x="209" y="92" width="120" height="12" rx="4" fill="#007FFF"/>
+<rect id="Rectangle 319_2" x="209" y="136" width="120" height="12" rx="4" fill="#007FFF"/>
+</g>
+</g>
+</g>
+</svg>

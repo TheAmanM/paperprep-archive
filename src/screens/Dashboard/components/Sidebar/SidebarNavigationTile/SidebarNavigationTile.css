@@ -1,0 +1,29 @@
+.sidebar-navigation-tile {
+  padding: 0.5rem 0.75rem;
+  margin-block: 0.5rem;
+
+  border-radius: 0.625rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-weight: 500;
+  /* font-size: 17px; */
+  transition: all 200ms ease-in-out;
+}
+
+.sidebar-navigation-tile svg {
+  margin-inline-end: 0.625rem;
+}
+
+.sidebar-navigation-tile.active {
+  background-color: var(--primary-accent);
+  color: var(--primary-color);
+}
+
+/* .sidebar-navigation-tile.last {
+  /* justify-self: self-end; */
+/* justify-items: center;
+} */

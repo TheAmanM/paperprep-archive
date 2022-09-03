@@ -13,7 +13,6 @@ const ProgressIndicator = () => {
     setLoadKey((key) => {
       return key + 1;
     });
-    console.log("Location:", location.pathname);
     // });
   }, [location]);
 

@@ -1,0 +1,27 @@
+.profile {
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+
+  width: 3rem;
+  aspect-ratio: 1;
+  /* height: 5rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  user-select: none;
+
+  transition: all 5000ms ease-in-out;
+}
+
+.profile.small {
+  width: 3rem;
+  font-size: 1.25rem;
+}
