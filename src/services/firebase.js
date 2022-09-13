@@ -208,7 +208,7 @@ function useProvideAuth() {
   const signOut = async () => {
     const auth = getAuth();
     await auth.signOut();
-    setUser(false);
+    setUser(null);
   };
 
   const sendPasswordResetEmail = (email) => {
