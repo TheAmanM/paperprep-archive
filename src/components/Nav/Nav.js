@@ -4,12 +4,14 @@ import "./Nav.css";
 import { BiMenu, BiX } from "react-icons/bi";
 import logo from "./assets/logo.svg";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../services/firebase";
 // import menu from './assets/menu.svg'
 // import close from './assets/close.svg'
 // import { FaTimes } from 'react-icons/fa'
 
 const Nav = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const auth = useAuth();
 
   function handleMenuClick() {
     setMenuOpen(!menuOpen);
@@ -23,6 +25,10 @@ const Nav = (props) => {
   function handleSignUp() {
     setMenuOpen(false);
     props.scrollToBottom();
+  }
+
+  function handleSignOut() {
+    if (window.confirm("Are you sure you want to sign out?")) auth.signOut();
   }
 
   return (
@@ -88,14 +94,27 @@ const Nav = (props) => {
             <li className="navbar__navigation__item">About</li>
           </Link>
         </ul>
-        <Link to={"/auth"}>
-          <button className="button outlined">Login</button>
-        </Link>
-        <Link to={"/auth"}>
-          <button className="button filled" onClick={handleSignUp}>
-            Sign Up
-          </button>
-        </Link>
+        {auth.user !== null ? (
+          <>
+            <Link to={"/dashboard"}>
+              <button className="button filled">Dashboard</button>
+            </Link>
+            <button className="button outlined" onClick={handleSignOut}>
+              Sign out
+            </button>
+          </>
+        ) : (
+          <>
+            {/* <Link to={"/auth"}>
+              <button className="button outlined">Login</button>
+            </Link> */}
+            <Link to={"/auth"}>
+              <button className="button filled" onClick={handleSignUp}>
+                Login / Sign Up
+              </button>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );
