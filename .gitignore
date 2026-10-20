@@ -21,3 +21,41 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Archive preparation: secrets and generated files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*service*account*.json
+*firebase-adminsdk*.json
+credentials*.json
+secrets.*
+.npmrc
+.netrc
+node_modules/
+build/
+dist/
+out/
+coverage/
+.firebase/
+.next/
+.nuxt/
+.cache/
+*.log
+*.tsbuildinfo
+Thumbs.db
+
+# Separate archive repository, not part of this parent project.
+/paperprep/
+
+# Local credentials and authentication/debug logs.
+secret.json
+secrets.json
+*.credentials.json
+.pypirc
+.netrc
